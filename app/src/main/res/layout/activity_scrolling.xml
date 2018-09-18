@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivity">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/navy">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:background="@null">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@null">
+
+
+                                <ImageView
+                                    android:id="@+id/header_eha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/header" />
+                        </LinearLayout>
+
+
+                </android.support.design.widget.AppBarLayout>
+
+                <include
+                    layout="@layout/content_scrolling"
+                    android:layout_height="422dp"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
