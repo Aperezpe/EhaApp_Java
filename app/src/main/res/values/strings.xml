@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">EhaApp2</string>
+    <string name="book_title">Super Hero Puppy Dog</string>
+    <string name="book_author">By SJ Walter</string>
+    <string name="book_summary">Superhero Dog is a young puppy who is very talkative and fun loving. Read the story to find out more about Superhero Puppy Dog, the talkative puppy!</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

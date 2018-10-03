@@ -22,6 +22,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
         configureNewsButton();
         configureBookButton();
+        configureContactButton();
     }
 
     private void configureNewsButton()
@@ -46,6 +47,19 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(ScrollingActivity.this, book.class));
+            }
+        });
+    }
+
+    private void configureContactButton()
+    {
+        Button newsButton = (Button) findViewById(R.id.contact_button);
+        newsButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(ScrollingActivity.this, contact.class));
             }
         });
     }
